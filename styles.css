@@ -1,0 +1,273 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ff6600 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  z-index: 9999;
+}
+/* custom css */
+
+.hero-video {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.wa-icon {
+  display: inline;
+  width: 35px;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-primary:hover {
+  background-color: #ffca2c;
+  border-color: #ffca2c;
+}
+
+/* new elevator section  */
+/* Add these styles to your existing styles.css file */
+
+.elevator-solutions {
+  background-color: #ffffff;
+}
+
+.elevator-solutions h2 {
+  font-weight: bold;
+}
+
+.elevator-solutions h3 {
+  font-weight: normal;
+}
+
+.elevator-solutions p {
+  color: #a9a9a9;
+}
+
+.btn-outline-warning {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.btn-outline-warning:hover {
+  background-color: #d4af37;
+  color: #ffffff;
+}
+
+/*our products  */
+
+/* Add these styles to your existing styles.css file */
+
+.our-products .card {
+  border: 1px solid #e3e3e3;
+  transition: transform 0.3s ease-in-out;
+}
+
+.our-products .card:hover {
+  transform: translateY(-5px);
+}
+
+.our-products .card-img-top {
+  height: 546px;
+  object-fit: cover;
+}
+
+.our-products .card-body {
+  background-color: #2a2a2a;
+}
+
+.our-products .card-title {
+  color: #d4af37;
+}
+
+.our-products .card-text {
+  color: #a9a9a9;
+}
+
+/* Add these styles to your existing styles.css file */
+
+.card {
+  border: 1px solid #4d4141;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  color: #ff6600;
+}
+.card-text {
+  color: #343a40;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #d4af37;
+}
+
+.btn-warning {
+  background-color: #d4af37;
+  border-color: #d4af37;
+}
+
+.btn-warning:hover {
+  background-color: #c4a030;
+  border-color: #c4a030;
+}
+
+/* footer */
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 40rem;
+  background: url("/path/to/your/image.png") no-repeat center center;
+  background-size: cover;
+  padding: 0;
+}
+
+.masthead-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.masthead .container {
+  position: relative;
+  z-index: 2;
+}
+
+.masthead-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.masthead-subheading {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li:hover {
+  color: #c4a030;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+  color: #c4a030;
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer .text-center {
+  margin-top: 2rem;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+
+/* map */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .masthead-heading {
+    font-size: 5rem;
+  }
+  .masthead-subheading {
+    font-size: 2rem;
+  }
+}
+
+/* fixed whatsapp icon */
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+.whatsapp-fixed-icon img {
+  width: 35px;
+  height: 35px;
+}
+.whatsapp-fixed-icon:hover {
+  transform: scale(1.1);
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .whatsapp-fixed-icon {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-fixed-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
