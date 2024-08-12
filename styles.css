@@ -1,3 +1,13 @@
+:root {
+  --main-heading-color: #0256c5; /* Gold for headings */
+  --primary-bg-color: #2f4f4f; /* Dark Slate Gray for primary background */
+  --accent-color: #2a3b60; /* Deep Blue for accents */
+  --secondary-bg-color: #f0f0f0; /* Light Gray for secondary background */
+  --cta-color: #800020; /* Burgundy for buttons/CTAs */
+  --text-color: #2a3b60; /* White for text */
+  --off-white-color: #f7f7f7; /* Off-White for alternative text color */
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -6,7 +16,8 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: #ff6600 !important;
+  color: #fff !important;
+  /* color: #413aa1 !important; */
 }
 
 a {
@@ -15,8 +26,34 @@ a {
 
 nav {
   z-index: 9999;
+  background-color: #0256c5;
+  color: #fff;
+}
+.nav-color {
+  color: #fff !important;
+}
+.nav-color:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 /* custom css */
+h1,
+h2 {
+  color: #0256c5;
+}
+
+h3,
+h4 {
+  color: var(--text-color);
+}
+
+.hero {
+  h1,
+  h2,
+  h3 {
+    color: #fff;
+  }
+}
 
 .hero-video {
   height: 90vh;
@@ -34,13 +71,13 @@ img {
 }
 
 .btn-primary {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #0256c5;
+  border-color: #0256c5;
 }
 
 .btn-primary:hover {
-  background-color: #ffca2c;
-  border-color: #ffca2c;
+  background-color: #413aa1;
+  border-color: #413aa1;
 }
 
 /* new elevator section  */
@@ -62,16 +99,28 @@ img {
   color: #a9a9a9;
 }
 
-.btn-outline-warning {
-  border-color: #d4af37;
-  color: #d4af37;
+.btn-outline {
+  border-color: #fff;
+  color: #fff;
 }
 
-.btn-outline-warning:hover {
-  background-color: #d4af37;
+.btn-outline:hover {
+  background-color: #fff;
+  color: #413aa1;
+}
+.btn-outline-main {
+  border-color: #0256c5;
+  color: #0256c5;
+}
+
+.btn-outline-main:hover {
+  background-color: #413aa1;
   color: #ffffff;
 }
 
+.text-justify {
+  text-align: justify;
+}
 /*our products  */
 
 /* Add these styles to your existing styles.css file */
@@ -91,15 +140,15 @@ img {
 }
 
 .our-products .card-body {
-  background-color: #2a2a2a;
+  background-color: #fff;
 }
 
 .our-products .card-title {
-  color: #d4af37;
+  color: #0256c5;
 }
 
 .our-products .card-text {
-  color: #a9a9a9;
+  color: var(--text-color);
 }
 
 /* Add these styles to your existing styles.css file */
@@ -112,7 +161,7 @@ img {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-title {
-  color: #ff6600;
+  color: #0256c5;
 }
 .card-text {
   color: #343a40;
@@ -124,17 +173,17 @@ img {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #d4af37;
+  border-color: #0256c5;
 }
 
 .btn-warning {
-  background-color: #d4af37;
-  border-color: #d4af37;
+  background-color: #0256c5;
+  border-color: #0256c5;
 }
 
 .btn-warning:hover {
-  background-color: #c4a030;
-  border-color: #c4a030;
+  background-color: #413aa1;
+  border-color: #413aa1;
 }
 
 /* footer */
@@ -171,7 +220,7 @@ img {
 }
 
 .footer {
-  background-color: #333;
+  background-color: #0256c5;
   color: white;
   padding: 2rem 0;
 }
@@ -205,7 +254,7 @@ img {
 
 .footer .text-center {
   margin-top: 2rem;
-  border-top: 1px solid #555;
+  border-top: 1px solid #fff;
   padding-top: 1rem;
 }
 
@@ -240,8 +289,8 @@ img {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-color: #25d366;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -252,8 +301,8 @@ img {
   transition: transform 0.2s;
 }
 .whatsapp-fixed-icon img {
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
 }
 .whatsapp-fixed-icon:hover {
   transform: scale(1.1);
