@@ -12,12 +12,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// Close the modal when clicking outside of it
-document.addEventListener("click", function (event) {
-  var modal = document.querySelector(".modal");
-  if (modal.classList.contains("show")) {
-    // Check if the modal is currently open
-    var bootstrapModal = bootstrap.Modal.getInstance(modal);
-    bootstrapModal.hide();
-  }
-});

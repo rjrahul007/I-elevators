@@ -320,3 +320,19 @@ img {
     height: 30px;
   }
 }
+
+.footer-link {
+  padding: 0.5em 0.5em;
+  transition: 250ms ease-in;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  background-color: #fff;
+  color: #0256c5;
+  border-radius: 9px;
+}
+
+h2 span {
+  font-size: 30px;
+}
